@@ -1,0 +1,29 @@
+.paggination {
+    display: flex;
+    justify-content: center;
+    li {
+        display: inline-block;
+        a {
+            text-align: center;
+            width: 45px;
+            line-height: 42px;
+            height: 45px;
+            border: 1px solid orange;
+            border-radius: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+            display: inline-block;
+            color: black;
+            &:hover {
+                background-color: orange;
+            }
+        }
+    }
+     :global {
+        .selected {
+            a {
+                background-color: orange;
+            }
+        }
+    }
+}
